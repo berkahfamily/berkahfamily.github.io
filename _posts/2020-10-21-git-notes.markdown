@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Git Notes"
+date: 2020-10-21 09:38:23 +0700
+categories: notes
+---
+
+# Unexpected code changes detected after chmod:
+
+```bash
+git config core.fileMode false
+```
