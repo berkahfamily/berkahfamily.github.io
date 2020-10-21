@@ -10,3 +10,11 @@ categories: notes
 ```bash
 git config core.fileMode false
 ```
+
+# Unexpected code changes detected after change OS:
+
+```bash
+git config --global core.autocrlf true
+```
+
+ref: https://github.com/microsoft/WSL/issues/184#issuecomment-215141836
