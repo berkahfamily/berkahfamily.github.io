@@ -18,3 +18,12 @@ git config --global core.autocrlf true
 ```
 
 ref: https://github.com/microsoft/WSL/issues/184#issuecomment-215141836
+
+# Git pull re-base vs no-rebase vs ff-only
+
+https://stackoverflow.com/questions/25430600/difference-between-git-pull-rebase-and-git-pull-ff-only
+
+fix: 
+```bash
+git config --global pull.ff only
+```
