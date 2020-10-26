@@ -27,3 +27,12 @@ fix:
 ```bash
 git config --global pull.ff only
 ```
+
+# Not possible to fast-forward, aborting.
+
+fix:
+```bash
+git pull --rebase
+```
+
+Ref: [Stackoverflow](https://stackoverflow.com/a/43460847/1586914)
