@@ -39,3 +39,35 @@ categories: notes
    ```bash
    git submodule add -- git@gitlab.com:berkahfamily/ka-libs.git packages/libs
    ```
+
+# Pull submodules
+
+> Ref [stackoverflow](https://stackoverflow.com/a/32624576/1586914)
+
+## First time
+Clone and Init Submodule
+
+```bash
+git clone git@github.com:speedovation/kiwi-resources.git resources
+git submodule init
+```
+
+## Rest
+During development just pull and update submodule
+
+```bash
+git pull --recurse-submodules  && git submodule update --recursive
+```
+
+Update Git submodule to latest commit on origin
+```bash
+git submodule foreach git pull origin master
+```
+
+Preferred way should be below
+
+```bash
+git submodule update --remote --merge
+```
+
+note: last two commands have same behaviour
